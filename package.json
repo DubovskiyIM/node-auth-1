@@ -2,6 +2,9 @@
   "name": "node-express-auth",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
