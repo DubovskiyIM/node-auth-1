@@ -53,7 +53,7 @@ app
   .get('/profile', checkAuth, r => {
     r.res.send(r.session.login);
   })
-  .get('/users', async r => {
+  .get('/users', checkAuth, async r => {
     const users = await User.find();
     r.res.render('users', { users });
   })
